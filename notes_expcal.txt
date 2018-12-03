@@ -1,8 +1,5 @@
-setup tcl 8.5.17+0
-setup wcstools 3.8.7.1+2
 export MPLCONFIGDIR=$PWD/matplotlib
 mkdir $MPLCONFIGDIR
-setup fitsio
 
 #./make_red_catlist.py >> ${jobid}.log 2>&1
 
@@ -13,6 +10,7 @@ setup scikitlearn
 #setup astropy
 setup finalcut Y5A1+3 
 
+echo python make_red_catlist.py /archive_data/desarchive/DEC/finalcut/Y5A1/HITS/3505/20140228/D00288940/p01/ ./
 echo python DECADE-expCalib_Y3apass.py --expnum 288940 --reqnum 3505 --attnum 1
 
 
