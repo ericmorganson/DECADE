@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#/usr/bin/env python
 #
 # Version from 10/09/2017 according to Sahar rounding was changed from 357 to 350.
 #
@@ -33,7 +33,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--caldir', help='caldir is the calibration directory', default='/des002/devel/emorgan2/APASS_TWOMASS/',type=str)
     parser.add_argument('--dir', help='dir is the production directory', default='/archive_data/desarchive/DEC/finalcut/Y5A1/HITS/',type=str)
-    parser.add_argument('--outdir', help='dir is the production directory', default='/home/emorgan2/DECADE/expCalib',type=str)
+    parser.add_argument('--outdir', help='dir is the production directory', default='.',type=str)
     parser.add_argument('--expnum', help='expnum is queried', default=288940, type=int)
     parser.add_argument('--reqnum', help='reqnum is queried', default=3505, type=str)
     parser.add_argument('--attnum', help='attnum is queried', default=1, type=int)

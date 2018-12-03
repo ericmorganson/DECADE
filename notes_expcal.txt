@@ -13,8 +13,6 @@ setup scikitlearn
 #setup astropy
 setup finalcut Y5A1+3 
 
-python DECADE-expCalib_Y3apass.py --expnum 288940 --reqnum 3505 --attnum 1
-
-#./BLISS-expCalib_Y3apass.py --expnum ${EXPNUM} --reqnum $RNUM --attnum $PNUM >> ${jobid}.log 2>&1 
+echo python DECADE-expCalib_Y3apass.py --expnum 288940 --reqnum 3505 --attnum 1
 
 
